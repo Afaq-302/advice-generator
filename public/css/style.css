@@ -1,0 +1,55 @@
+body {
+    background-color: #202632;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    max-width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    margin: 0 auto;
+    background-color: #313a49;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 7rem;
+}
+
+.container p {
+    color: hsl(150, 100%, 66%)
+}
+
+.container h2 {
+
+    font-weight: 300;
+    font-size: 1.8rem;
+    width: 70%;
+    margin: 6% 0%;
+}
+
+.icons:nth-of-type(1) {
+    padding: 3%;
+    width: 60%;
+    margin-top: 3%;
+
+}
+
+form input {
+    width: 30px;
+    position: relative;
+    top: 28px;
+    border: 14px solid hsl(150, 100%, 66%);
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+
+}
+
+.attribution {
+    font-size: 18px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
