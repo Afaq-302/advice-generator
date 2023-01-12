@@ -27,15 +27,14 @@ app.route("/")
                 let parsedBody = (JSON.parse(body));
                 var author = parsedBody[0].author;
                 var advice = parsedBody[0].quote;
-                console.log(parsedBody);
             }
-            res.render("index", { adviceTitle: advice, authorName: author })
+            res.render("index.ejs", { adviceTitle: advice, authorName: author })
 
         });
 
     })
     .post(function (req, res) {
-console.log(req.body);
+        console.log(req.body);
         request.get({
             url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
             headers: { 'X-Api-Key': 'f/9F1qK7ZnGTZV6NX6h6Yw==5SoJxUe9OVhAqvjN' },
@@ -49,7 +48,7 @@ console.log(req.body);
                 var advice = parsedBody[0].quote;
                 console.log(parsedBody);
             }
-            res.render("index", { adviceTitle: advice, authorName: author })
+            res.render("index.ejs", { adviceTitle: advice, authorName: author })
 
         });
     })
