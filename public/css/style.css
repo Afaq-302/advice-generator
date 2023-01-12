@@ -66,10 +66,6 @@ form input {
 /* } */
 
 @media only screen and (max-width: 500px) {
-    body {
-        background-color: blue;
-    }
-
     .container {
         min-width: 80%;
     }
